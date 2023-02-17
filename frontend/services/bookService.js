@@ -16,8 +16,8 @@ class BookService {
             method: 'POST',
             body: book
         })
-        const data = await res.json()
-        console.log(data)
+        // const data = await res.json()
+        // console.log(data)
     }
 
     async deleteBooks(bookId) {
