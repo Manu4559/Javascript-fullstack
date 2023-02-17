@@ -49,21 +49,21 @@ class UI {
         document.getElementById('book-form').reset()
     }
 
-    renderMessage(message, colorMessage, secondsToRemove) {
-        const div = document.createElement('div')
-        div.className = `alert alert-${colorMessage} message`
-        div.appendChild(document.createTextNode(message))
+    // renderMessage(message, colorMessage, secondsToRemove) {
+    //     const div = document.createElement('div')
+    //     div.className = `alert alert-${colorMessage} message`
+    //     div.appendChild(document.createTextNode(message))
 
 
-        const container = document.querySelector('.col-md-4')
-        const bookForm = document.querySelector('#book-form')
+    //     const container = document.querySelector('.col-md-4')
+    //     const bookForm = document.querySelector('#book-form')
 
-        container.parentNode.insertBefore(div, bookForm)
-        setTimeout(() => {
-            document.querySelector('.message').remove()
-        }, secondsToRemove)
+    //     container.parentNode.insertBefore(div, bookForm)
+    //     setTimeout(() => {
+    //         document.querySelector('.message').remove()
+    //     }, secondsToRemove)
 
-    }
+    // }
 
     async deleteBook(bookId) {
         await bookService.deleteBooks(bookId)

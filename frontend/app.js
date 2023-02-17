@@ -21,7 +21,7 @@ document.getElementById('book-form')
 
         const ui = new UI()
         ui.addNewBook(formData)
-        ui.renderMessage('New Book Added', 'success', 3000)
+        //ui.renderMessage('New Book Added', 'success', 3000)
 
         e.preventDefault()
 
